@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Running Convsh scripts &#8212; Xconv 1.94 documentation</title>
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
     
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script src="_static/documentation_options.js?v=d23f3b51"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Example Convsh scripts" href="examples.html" />
     <link rel="prev" title="Convsh variables" href="variables.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -31,7 +30,8 @@
         <li class="right" >
           <a href="variables.html" title="Convsh variables"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Xconv 1.94 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Xconv 1.94 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Running Convsh scripts</a></li> 
       </ul>
     </div>  
 
@@ -40,8 +40,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="running-convsh-scripts">
-<span id="run"></span><h1>Running Convsh scripts<a class="headerlink" href="#running-convsh-scripts" title="Permalink to this headline">¶</a></h1>
+  <section id="running-convsh-scripts">
+<span id="run"></span><h1>Running Convsh scripts<a class="headerlink" href="#running-convsh-scripts" title="Link to this heading">¶</a></h1>
 <p>There are two methods to run convsh scripts, the first method is to directly use
 the executable:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">convsh</span> <span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
@@ -50,11 +50,11 @@ the executable:</p>
 <p>where <em>script.tcl</em> should be replaced with the name of your script. The above
 only works if convsh is in your $PATH. It could be the case there is no convsh
 executable or it could be an older version of the code, in this case use</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">convsh1</span><span class="o">.</span><span class="mi">93</span> <span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">convsh1</span><span class="mf">.93</span> <span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
 </pre></div>
 </div>
 <p>If convsh is not in your $PATH then use the full pathname, for example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">umui</span><span class="o">/</span><span class="n">umtools</span><span class="o">/</span><span class="n">linux_x86_64</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">convsh1</span><span class="o">.</span><span class="mi">93</span> <span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">umui</span><span class="o">/</span><span class="n">umtools</span><span class="o">/</span><span class="n">linux_x86_64</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">convsh1</span><span class="mf">.93</span> <span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
 </pre></div>
 </div>
 <p>The second method of running a convsh script is to use the first line in the
@@ -79,20 +79,25 @@ execute mode set, to do this run</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">script</span><span class="o">.</span><span class="n">tcl</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="variables.html"
-                        title="previous chapter">Convsh variables</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="examples.html"
-                        title="next chapter">Example Convsh scripts</a></p>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="variables.html"
+                          title="previous chapter">Convsh variables</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="examples.html"
+                          title="next chapter">Example Convsh scripts</a></p>
+  </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -100,21 +105,21 @@ execute mode set, to do this run</p>
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -126,12 +131,13 @@ execute mode set, to do this run</p>
         <li class="right" >
           <a href="variables.html" title="Convsh variables"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Xconv 1.94 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Xconv 1.94 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Running Convsh scripts</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2015, Jeff Cole.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.2.
+    &#169; Copyright 2015, Jeff Cole.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
     </div>
   </body>
 </html>
